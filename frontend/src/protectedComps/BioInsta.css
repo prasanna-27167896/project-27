@@ -1,0 +1,330 @@
+:root {
+  --color-bg: #f4f9ff; /* Very light blue/white background */
+  --color-surface: #ffffff; /* White surface for cards */
+  --color-surface-alt: #eaf3fb; /* Subtle light blue alt background */
+  --color-primary: #3178c6; /* Gemini-style blue */
+  --color-primary-light: #69a9ed; /* Lighter blue for hover/glow */
+  --color-accent: #00b8d9; /* Vibrant cyan accent */
+  --color-text: #1e2a38; /* Deep navy text for good contrast */
+  --color-muted: #5a7184; /* Muted blue-gray (not plain gray) */
+  --color-border: #d0e2f2; /* Soft blue border */
+  --color-code: #03325a; /* Strong blue for data/code */
+  --color-danger: #e53935; /* Red alert color */
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.nav-head {
+  color: var(--color-code);
+}
+
+.btns-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  background-color: var(--color-code);
+  padding: 10px 20px;
+  color: var(--color-bg);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: brown;
+  color: var(--color-bg);
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.logout-btn:hover {
+  background-color: rgb(206, 43, 43);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 30px;
+  width: 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 60px;
+}
+
+.main-head {
+  font-size: 27px;
+  color: var(--color-code);
+}
+
+.main-head h3 span {
+  font-size: 27px;
+  color: var(--color-code);
+}
+.main-head h3 {
+  font-size: 27px;
+  color: var(--color-primary-light);
+}
+
+.main-para {
+  font-size: 22px;
+  color: var(--color-primary-light);
+  width: 80%;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  line-height: 36px;
+  font-weight: 700;
+  margin-top: -27px;
+}
+
+.gen-btn {
+  text-decoration: none;
+  background-color: var(--color-code);
+  padding: 15px 25px;
+  color: var(--color-bg);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  font-size: larger;
+}
+
+.gen-btn:hover {
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+  border-color: var(--color-primary-light);
+}
+.nav-btn:hover {
+  background-color: var(--color-primary-light);
+  border: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.card-box {
+  background-color: rgb(229, 239, 253);
+  padding: 10px 25px;
+  width: 350px;
+  height: 150px;
+  margin: 70px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-content h3 {
+  color: var(--color-code);
+  font-size: larger;
+}
+
+.card-content p {
+  margin-top: 5px;
+  color: var(--color-primary-light);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--color-code);
+  margin: 10px 50px;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.contact-container h1 {
+  color: var(--color-code);
+  font-weight: bold;
+}
+
+.contact-container p {
+  color: var(--color-primary-light);
+  font-size: larger;
+}
+
+.contact-container div button {
+  text-decoration: none;
+  background-color: var(--color-code);
+  padding: 15px 25px;
+  color: var(--color-bg);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+.contact-container div button:hover {
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+  border-color: var(--color-primary-light);
+}
+/*  */
+
+.gen-container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.gen-content h1 {
+  color: var(--color-code);
+  font-weight: bold;
+}
+
+.gen-content p {
+  width: 80%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.gen-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.gen-input input {
+  width: 70%;
+  padding: 15px 10px;
+  font-size: large;
+  border-radius: 7px;
+  border: none;
+  background-color: var(--color-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gen-input button {
+  text-decoration: none;
+  background-color: var(--color-code);
+  padding: 14px 16px;
+  color: var(--color-bg);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.gen-input button:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.gen-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border: 5px solid var(--color-code);
+  width: 70%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  /* display: none; */
+}
+
+.gen-result h2 {
+  color: var(--color-code);
+}
+
+.gen-result p {
+  color: var(--color-primary-light);
+  margin-top: -2px;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+}
+
+.gen-result div button {
+  text-decoration: none;
+  background-color: var(--color-code);
+  padding: 10px 16px;
+  color: var(--color-bg);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin-top: 2px;
+  margin-bottom: 16px;
+}
+
+.gen-result div button:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.foot-container {
+  background-color: var(--color-border);
+  padding-bottom: 15px;
+}
+
+.foot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.line {
+  background-color: black;
+  height: 1px;
+  margin: 0 25px;
+}
+
+.foot-copy {
+  margin: 20px 25px;
+}

@@ -1,0 +1,88 @@
+/* root.css or inside :root */
+:root {
+  --color-bg: #f4f9ff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eaf3fb;
+  --color-primary: #3178c6;
+  --color-primary-light: #69a9ed;
+  --color-accent: #00b8d9;
+  --color-text: #1e2a38;
+  --color-muted: #5a7184;
+  --color-border: #d0e2f2;
+  --color-code: #03325a;
+  --color-danger: #e53935;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-border) !important;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--color-surface);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+}
+
+span {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: var(--color-muted);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-primary-light);
+}
+
+p {
+  text-align: center;
+  color: var(--color-muted);
+  margin-top: 15px;
+}
+
+.btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
