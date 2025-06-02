@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://bio-insta-ai.netlify.app/",
+    origin: "https://bio-insta-ai.netlify.app",
     credentials: true,
   })
 );
